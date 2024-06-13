@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black ;
+            border-collapse: collapse;
+        }
+        .box{
+            margin-top : 10% ;
+            width : 30rem ;
+            margin-left: auto ;
+            margin-right: auto ;
+        }
+        #Fname , #Lname , #email , #pwd , #repwd , #age , #ph , #add , #state , #country {
+            width : 20rem ;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1 style = "color : blue ; text-align: center;">Registration Form</h1>
+        <table>
+            <tr>
+                <th>
+                    <label for="Fname">First Name</label>
+                </th>
+                <td>
+                    <input type="text" id = "Fname">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Lname">Last Name</label>
+                </th>
+                <td>
+                    <input type="text" id = "Lname">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="email">Email</label>
+                </th>
+                <td>
+                    <input type="email" id = "email">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="pwd">Password</label>
+                </th>
+                <td>
+                    <input type="password" id = "pwd">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="repwd">Re-enter Password</label>
+                </th>
+                <td>
+                    <input type="password" id = "repwd">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="gender">Gender:</label>
+                </th>
+                <td>
+                    <input type="radio" id = "gender" name = "gender">
+                    <label for="gender" id = "male">Male</label>
+                    <br>
+                    <hr>
+                    <input type="radio" id = "gender" name = "gender">
+                    <label for="gender" id = "female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="age">Age:</label>
+                </th>
+                <td>
+                    <input type="text" id = "age">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="ph">Phone Number</label>
+                </th>
+                <td>
+                    <input type="text" id = "ph">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="add">Address</label>
+                </th>
+                <td>
+                    <input type="text" id = "add" style = "height: 4rem">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="state">State</label>
+                </th>
+                <td>
+                    <input type="text" id = "state">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="country">Country</label>
+                </th>
+                <td>
+                    <select name="country" id="country" >
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="SriLanka">Sri Lanka</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
+
+
