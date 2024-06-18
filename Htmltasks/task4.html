@@ -3,62 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML TASK 4 PRAGYA</title>
     <style>
         .myform{
             display: block;
             block-size : 50% ;
             margin-top : 18% ;
-            width : 20% ;
+            width : 30% ;
             margin-left: auto;
             margin-right: auto;
         }
         .ip1 , .ip2 , .ip3 , .ip4 , .ip5 , .ip6 {
-            padding-bottom : 0.5rem  ;
+            padding-bottom : 1rem  ;
+            display : flex ;
         }
 
         #fullname , #username , #pwd , #repwd , #add , #age , #gender {
-            width: 50% ;       
-            background-color: aqua;
-            border: 1px solid rgb(0, 132, 255) ;
+            border: 1px solid black ;
+            justify-items: right;
+        }
+
+        .inplabel {
+            width: 40%  ;
         }
     </style>
 </head>
 <body>
     <form class = "myform">
         <div class = "ip1" >
-            <label for="fullname">Fullname:</label>
+            <div class="inplabel"><label for="fullname">Fullname:</label></div>
             <input type="text" id = "fullname">
         </div>
         
         <div class="ip2">
-            <label for="username">Username:</label>
+            <div class="inplabel"><label for="username" class = "inplabel">Username:</label></div>
             <input type="text" id = "username">
         </div>
         
         <div class="ip3">
-            <label for="pwd">Password:</label>
+            <div class="inplabel"><label for="pwd" class = "inplabel">Password:</label></div>
             <input type="password" id = "pwd">
         </div>
         
         <div class="ip4">
-            <label for="repwd">Re Password:</label>
+            <div class="inplabel"><label for="repwd" class = "inplabel">Re Password:</label></div>
             <input type="password" id = "repwd">
 
         </div>
         
         <div class="ip5">
-            <label for="add">Address:</label>
+            <div class="inplabel"><label for="add" class = "inplabel">Address:</label></div>
             <input type="text" id = "add">
         </div>
         
         <div class="ip6">
-            <label for="age">Age:</label>
+            <div class="inplabel"><label for="age" class = "inplabel">Age:</label></div>
             <input type="text" id = "age">
         </div>
         
         <div class="ip6">
-            <label for="genger">Gender:</label>
+            <label for="genger" class = "inplabel">Gender:</label>
             <select name="gender" id="gender">
                 <option value = "Male">Male</option>
                 <option value = "Female">Female</option>

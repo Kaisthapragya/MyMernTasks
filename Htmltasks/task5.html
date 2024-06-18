@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML TASK 5 PRAGYA</title>
     <style>
         table,th,td{
             border: 1px solid black ;
@@ -15,8 +15,13 @@
             margin-left: auto ;
             margin-right: auto ;
         }
-        #Fname , #Lname , #email , #pwd , #repwd , #age , #ph , #add , #state , #country {
+        #Fname , #Lname , #email , #pwd , #repwd , #age , #ph , #add , #state {
             width : 20rem ;
+        }
+        #btn{
+            margin: 2rem ;
+            width: 5rem ;
+            margin-left : 12rem ;
         }
     </style>
 </head>
@@ -115,7 +120,8 @@
                     <label for="country">Country</label>
                 </th>
                 <td>
-                    <select name="country" id="country" >
+                    <select name="country" id="country">
+                        <option value="" disabled selected>Choose your country</option>
                         <option value="India">India</option>
                         <option value="Pakistan">Pakistan</option>
                         <option value="Nepal">Nepal</option>
@@ -123,8 +129,34 @@
                     </select>
                 </td>
             </tr>
-
+            <tr>
+                <th>
+                    <label for="langknown">Languages known</label>
+                </th>
+                <td>
+                    <input type ="checkbox" id = "lang1" name = "lang1">
+                    <label for="lang1">English</label>
+                    <input type="checkbox" id = "lang2" name = "lang2">
+                    <label for="lang2">Kannada</label>
+                    <input type="checkbox" id = "lang3" name = "lang3">
+                    <label for="lang3">Hindi</label>
+                    <input type="checkbox" id = "lang4" name = "lang4">
+                    <label for="lang4">Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id = "declaration" checked>
+                    <label for="declaration">Hereby I declare all the given details are true</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style = "text-align: right;">
+                    Log in to <a href="https://ethnus.com/">Ethnus</a> website
+                </td>
+            </tr>
         </table>
+        <button id = "btn">Register</button>
     </div>
 </body>
 </html>
